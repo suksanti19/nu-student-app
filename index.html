@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบรายชื่อนักศึกษา NU</title>
+    
+    <meta property="og:title" content="NU Student Directory">
+    <meta property="og:description" content="ระบบค้นหารายชื่อและเบอร์โทรศัพท์นักศึกษา ป.โท/ป.เอก">
+    <meta property="og:image" content="https://www.nu.ac.th/wp-content/uploads/2023/09/LOGONU-01.png"> <meta property="og:url" content="URL_GITHUB_PAGES_ของคุณ">
+    <meta property="og:type" content="website">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #4b5563;
+        }
+        .container { text-align: center; }
+        .spinner {
+            border: 4px solid #e5e7eb;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+
+    <script>
+        // ==========================================
+        // ใส่ลิงก์ Google Apps Script ของคุณตรงนี้ !!!
+        // ==========================================
+        const gasUrl = "https://script.google.com/macros/s/AKfycbx1Y3YkUtw7GnkvaJjVY3d8hMTFw_9ZMnfQzBkMtOIb-dndxjYXlOTFm2Zkvp8BAr22vQ/exec"; 
+
+        // คำสั่ง Redirect (นับถอยหลัง 1 วินาทีแล้วไป)
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.replace(gasUrl);
+            }, 800); // 800ms คือเวลาหน่วงนิดนึงเพื่อให้ Facebook เก็บข้อมูลทัน
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="spinner"></div>
+        <h3>กำลังเข้าสู่ระบบรายชื่อนักศึกษา...</h3>
+        <p style="font-size: 0.8rem; opacity: 0.7;">ระบบโดย KruSuksanti</p>
+    </div>
+</body>
+</html>
